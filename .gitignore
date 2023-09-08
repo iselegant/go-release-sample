@@ -19,3 +19,11 @@
 
 # Go workspace file
 go.work
+
+# Addtional rules
+.DS_Store
+.idea/
+
+# Generated go binary
+bin/goxz/**
+!bin/goxz/.gitkeep
