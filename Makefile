@@ -1,4 +1,4 @@
-BIN_NAME := gohello
+BIN_NAME := gohello		# please change name you want
 BIN_DIR := ./bin
 X_BIN_DIR := $(BIN_DIR)/goxz
 VERSION := $$(make -s app-version)
