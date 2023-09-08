@@ -46,9 +46,7 @@ patch-version:
 
 .PHONY: push-tag
 push-tag:
-	git commit -m "Update: v$(make app-version)"
-	git tag v$(make app-version)
-	git push origin v$(make app-version)
+	git commit -m "Update: v$(VERSION)" && git tag v$(VERSION) && git push origin v$(VERSION)
 
 # exec go install when each tool has not been installed
 $(GOBIN)/goxz:
