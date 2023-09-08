@@ -44,6 +44,12 @@ minor-version:
 patch-version:
 	@gobump patch -w -v -r .
 
+.PHONY: push-tag
+push-tag:
+	git commit -m "Update: v$(make app-version)"
+	git tag v$(make app-version)
+	git push origin v$(make app-version)
+
 # exec go install when each tool has not been installed
 $(GOBIN)/goxz:
 	@go install github.com/Songmu/goxz/cmd/goxz@latest
