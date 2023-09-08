@@ -45,14 +45,13 @@ git push origin v$(make app-version)
 
 ## 3. Checking GitHub actions to make package
 
-- First, go to the GitHub Actions page and check that the expected version of the Action finishes successfully.
-
+1. Go to the GitHub Actions page and check that the expected version of the Action finishes successfully.
 <img width="1838" alt="github-actions" src="https://github.com/iselegant/go-release-sample/assets/30573608/75fc1119-e402-4b71-92d2-9f30e8125abc">
 
-- Then go to the repository's main page and make sure the Release is updated. In this example "refs/tags/v1.0.7" is released.
 
+2. Go to the repository's main page and make sure the Release is updated. In this example "refs/tags/v1.0.7" is released.
 <img width="1322" alt="release-1" src="https://github.com/iselegant/go-release-sample/assets/30573608/4b2cb850-88f9-44e8-accd-dead1e431de8">
 
-- Finally, make sure you can get the built binaries.
 
+3. Make sure you can get the built binaries.
 <img width="1837" alt="release-2" src="https://github.com/iselegant/go-release-sample/assets/30573608/808cde54-1304-4287-8309-d2423be7850e">
